@@ -129,7 +129,7 @@ for (var i=0;i<pokeInfo.moves.length;i++){
   //(para4).append("Moves: " + pokeMoves[i]);
 
 }
-for (var i=0;i<pokeInfo.moves.length;i++){
+for (var i=0;i<4;i++){
   //append(pokeMoves,pokeInfo.moves[i].move.name)
   (para5).append(pokeMoves[i]+" ");
 
