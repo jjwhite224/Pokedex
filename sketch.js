@@ -14,7 +14,7 @@ let para;
 let isShiny = false;
 let statbubbles = [];
 function preload(){
-pokefont = loadFont('http://localhost:8000/Pokemon Solid.ttf');
+pokefont = loadFont('Pokemon Solid.ttf');
 }
 function setup(){
   pokeinp = createInput("Enter a pokemon(all lowercase pls)")
