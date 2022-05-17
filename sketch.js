@@ -14,7 +14,7 @@ let para;
 let isShiny = false;
 let statbubbles = [];
 function preload(){
-pokefont = loadFont('Pokemon Hollow.ttf');
+pokefont = loadFont('Pokemon Solid.ttf');
 }
 function setup(){
   pokeinp = createInput("Enter a pokemon(all lowercase pls)")
@@ -33,7 +33,7 @@ function draw(){
 
 background(pokecolor)
 //image(img,1200,0,100,100)
-$("h1,h2,h3,h4,h5,h6").css({"background-color": pokecolor,"color":"white","text-align": "center","margin":'auto'});
+$("h1,h2,h3,h4,h5,h6").css({"background-color": pokecolor,"color":"white","text-align": "center","margin":'auto',"font-family":pokeFont});
 $("img").css({"width":300,"height":300});
 pokeButton.mousePressed(findPokemon);
 randpokeButton.mousePressed(findrandPokemon);
