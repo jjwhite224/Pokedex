@@ -26,7 +26,7 @@ function setup(){
   randpokeButton.position(pokeinp.x+375,pokeinp.y)
   reloadButton.position(pokeinp.x+555,pokeinp.y)
   pokeinp.size(250)
-  createCanvas(windowWidth,500)
+  createCanvas(windowWidth,windowHeight)
 }
 
 function draw(){
