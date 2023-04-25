@@ -167,12 +167,12 @@ class StatBubble{
 
 }
 render(){
-   textSize(18)
+   textSize(16)
    textAlign(CENTER)
    textFont(pokefont)
    noStroke();
    fill("white")
-   text(this.name+":"+this.size,this.x,this.y-75)
+   text(this.name+":"+this.size,this.x,this.y-90)
    strokeWeight(3);
    stroke('black');
    ellipse(this.x,this.y,this.size);
