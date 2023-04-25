@@ -21,11 +21,10 @@ function setup(){
   pokeButton = createButton("Search Pokedex")
   randpokeButton = createButton("Random Search Pokedex")
   reloadButton = createButton("Reload Page")
-  pokeinp.position(25,10)
-  pokeButton.position(pokeinp.x+250,pokeinp.y)
-  randpokeButton.position(pokeinp.x+375,pokeinp.y)
-  reloadButton.position(pokeinp.x+555,pokeinp.y)
-  pokeinp.size(250)
+  pokeinp.position(0,0)
+  pokeButton.position(windowWidth/4,0)
+  randpokeButton.position(windowWidth/2,pokeinp.y)
+  pokeinp.size(windowWidth/4)
   createCanvas(windowWidth,windowHeight)
 }
 
@@ -52,19 +51,18 @@ statbubbles[i].render();
 
 
 function findPokemon(){
+  location.reload();
   pokeInfo = loadJSON(url+pokeinp.value(),pokeAnalyze)
   console.log(pokeInfo)
 }
 function findrandPokemon(){
+  location.reload();
   var randpoke = str(floor(random(0,898)))
   pokeInfo = loadJSON(url+randpoke,pokeAnalyze)
   console.log(pokeInfo)
   console.log(randpoke)
 }
 
-function reload(){
-  location.reload();
-}
 
 function pokeAnalyze(){
   var type = pokeInfo.types[0].type.name
@@ -141,7 +139,7 @@ var statlocationx = 0;
 for (i=0;i<pokeInfo.stats.length;i++){
 
 
-  statlocationx+= width/7;
+  statlocationx+= windowWidth/10;
   statbubbles[i] = new StatBubble(pokeInfo.stats[i],statlocationx,statlocationy);
 }
 }
