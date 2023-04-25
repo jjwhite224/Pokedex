@@ -20,7 +20,6 @@ function setup(){
   pokeinp = createInput("Enter a pokemon(all lowercase pls)")
   pokeButton = createButton("Search Pokedex")
   randpokeButton = createButton("Random Search Pokedex")
-  reloadButton = createButton("Reload Page")
   pokeinp.position(0,0)
   pokeButton.position(windowWidth/4,0)
   randpokeButton.position(windowWidth/2,pokeinp.y)
