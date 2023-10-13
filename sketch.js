@@ -35,7 +35,6 @@ $("h1,h2,h3,h4,h5,h6").css({"background-color": pokecolor,"color":"white","text-
 $("img").css({"width":300,"height":300});
 pokeButton.mousePressed(findPokemon);
 randpokeButton.mousePressed(findrandPokemon);
-reloadButton.mousePressed(reload)
 if ($('img').length>0){
 if ($("img").click(changeSprite)){
 }
