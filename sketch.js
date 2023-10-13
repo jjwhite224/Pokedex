@@ -49,12 +49,10 @@ statbubbles[i].render();
 
 
 function findPokemon(){
-  location.reload();
   pokeInfo = loadJSON(url+pokeinp.value(),pokeAnalyze)
   console.log(pokeInfo)
 }
 function findrandPokemon(){
-  location.reload();
   var randpoke = str(floor(random(0,898)))
   pokeInfo = loadJSON(url+randpoke,pokeAnalyze)
   console.log(pokeInfo)
