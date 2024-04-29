@@ -31,7 +31,7 @@ function draw(){
 
 background(pokecolor)
 //image(img,1200,0,100,100)
-$("h1,h2,h3,h4,h5,h6").css({"background-color": pokecolor,"color":"white","text-align": "center","margin":'auto',"font-family": pokefont});
+$("h1,h2,h3,h4,h5,h6").css({"background-color": 'white',"color":"white","text-align": "center","margin":'auto',"font-family": pokefont});
 $("img").css({"width":300,"height":300});
 pokeButton.mousePressed(findPokemon);
 randpokeButton.mousePressed(findrandPokemon);
