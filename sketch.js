@@ -130,12 +130,12 @@ for (var i=0;i<4;i++){
 }
 
 //(para4).append("Moves: " + pokeMoves[0]);
-var statlocationy = windowWidth/6;
+var statlocationy = 250;
 var statlocationx = 0;
 for (i=0;i<pokeInfo.stats.length;i++){
 
 
-  statlocationx+= windowWidth/6;
+  statlocationx+= windowWidth/5;
   statbubbles[i] = new StatBubble(pokeInfo.stats[i],statlocationx,statlocationy);
 }
 }
