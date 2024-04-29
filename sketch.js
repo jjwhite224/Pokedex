@@ -135,7 +135,7 @@ var statlocationx = 0;
 for (i=0;i<pokeInfo.stats.length;i++){
 
 
-  statlocationx+= windowWidth/4;
+  statlocationx+= windowWidth/16;
   statbubbles[i] = new StatBubble(pokeInfo.stats[i],statlocationx,statlocationy);
 }
 }
